@@ -3,24 +3,35 @@ package pizzamvc;
 /**
  * A class that represents a single pizza order.
  *
- * @author John Phillips
+ * @author Devin Walter
  */
 public class PizzaOrder {
 
     private String email;
     private String size;
     private String toppings;
+    private String crust;
 
     public PizzaOrder() {
         email = "";
         size = "";
         toppings = null;
+        crust = "";
     }
 
-    public PizzaOrder(String email, String size, String toppings) {
+    public PizzaOrder(String email, String size, String crust, String toppings) {
         this.email = email;
         this.size = size;
         this.toppings = toppings;
+        this.crust = crust;
+    }
+    
+    public String getCrust(){
+        return crust;
+    }
+    
+    public void setCrust(){
+        this.crust = crust;
     }
 
     public String getToppings() {

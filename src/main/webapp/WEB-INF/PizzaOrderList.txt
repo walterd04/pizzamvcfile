@@ -1,6 +1,6 @@
-joe@test.com|large|mushroom, pineapple
-sue@mu.edu|large|pepperoni
-tim@abc.com|large|none
-barb@mu.edu|small|pepperoni, pineapple
-jane@ex.com|medium|mushroom
-john@mu.edu|large|pepperoni, mushroom, pineapple
+joe@test.com|large|thin|mushroom, pineapple
+sue@mu.edu|large|thin|pepperoni
+tim@abc.com|large|pan||none
+barb@mu.edu|small|hand-tossed|pepperoni, pineapple
+jane@ex.com|medium|thin|mushroom
+john@mu.edu|large|pan|pepperoni, mushroom, pineapple

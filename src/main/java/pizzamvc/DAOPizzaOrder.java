@@ -17,7 +17,7 @@ import java.util.Scanner;
  * from a file or if only a single user writes to a file. Because of this a
  * multiuser database approach is often preferred.
  *
- * @author John Phillips
+ * @author Devin Walter
  */
 public class DAOPizzaOrder {
 
@@ -26,7 +26,7 @@ public class DAOPizzaOrder {
 
         // the FileWriter true keyword indicates appending to end of file
         try (PrintWriter out = new PrintWriter(new FileWriter(file, true))) {
-            out.println(order.getEmail() + "|" + order.getSize() + "|" + order.getToppings());
+            out.println(order.getEmail() + "|" + order.getSize() + "|" + order.getCrust() + "|" + order.getToppings());
         }
     }
 
@@ -40,8 +40,9 @@ public class DAOPizzaOrder {
             String[] lineArray = line.split("[|]");
             String email = lineArray[0];
             String size = lineArray[1];
-            String toppings = lineArray[2];
-            PizzaOrder order = new PizzaOrder(email, size, toppings);
+            String crust = lineArray[2];
+            String toppings = lineArray[3];
+            PizzaOrder order = new PizzaOrder(email, size, crust, toppings);
             list.add(order);
         }
 //        System.out.println("list=" + list);
